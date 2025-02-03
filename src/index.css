@@ -1,0 +1,42 @@
+* {
+  font-family: monospace;
+}
+
+p {
+  color: grey;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 2s linear infinite;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-main {
+  display: flex;
+  column-gap: 20px;
+  align-items: end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
